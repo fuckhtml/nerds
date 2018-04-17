@@ -1,16 +1,217 @@
-<!DOCTYPE html>
 <!--
-  
-  Copyright
-  
-  Design: htmlacademy.ru
-  Front end realization: Alexander Grigoriev
-  
-  Contact me on
-  - fb.com/hatehtml
-  - fuckhtml.com
-  - github.com/fuchhtml
-  
-  ❤ Thanks for watching my code ❤
+    
+    Copyright
+    
+    Design: htmlacademy.ru
+    Front end realization: Alexander Grigoriev
+    
+    Contact me on
+    - fb.com/hatehtml
+    - fuckhtml.com
+    - github.com/fuchhtml
+    
+    ❤ Thanks for watching my code ❤
 
 -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин готовых шаблонов | Дизайн-студия Нёрдс</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body class="page-catalog">
+
+  <header class="main-header">
+    <nav class="main-nav wrapper">
+      <ul class="nav-site">
+        <li class="to-index">
+          <a href="">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс" title="На главную">
+            <br>
+            На главную
+          </a>
+        </li>
+        <li><a href="">Студия</a></li>
+        <li><a href="">Клиенты</a></li>
+        <li class="current"><a href="">Магазин</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+      <ul class="nav-user">
+        <li class="basket"><a href="">Корзина</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <h1 class="page-title visually-hidden">Магазин готовых шаблонов</h1>
+
+  <div class="columns">
+    <section class="left">
+      <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
+      <form class="filter-form" action="echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <div class="price"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка</legend>
+          <p>
+            <label><input type="radio">Адаптивная</label>            
+          </p>
+          <p>
+            <label><input type="radio">Фиксированная</label>            
+          </p>
+          <p>
+            <label><input type="radio">Резиновая</label>            
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности</legend>
+          <p>
+            <label><input type="checkbox">Слайдер</label>
+          </p>
+          <p>
+            <label><input type="checkbox">Блок преимуществ</label>     
+          </p>
+          <p>
+            <label><input type="checkbox">Новости</label>
+          </p>
+          <p>
+            <label><input type="checkbox">Галерея</label>
+          </p>
+          <p>
+            <label><input type="checkbox">Корзина</label>            
+          </p>
+        </fieldset>
+        <button class="btn" type="submit">Показать</button>
+      </form>
+    </section>
+    <div class="right">
+      <section class="sort">
+        <h2>Сортировать: </h2>
+        <a href="">По цене</a>
+        <a href="">По типу</a>
+        <a href="">По названию</a>
+        <a href="">По убыванию</a>
+        <a href="">По возрастанию</a>
+      </section>
+      <section class="result">
+        <h2 class="visually-hidden">Результаты по поиску</h2>
+        <article class="productcard">
+          <img src="img/productcards/img-sedona.jpg" width="360" height="576" alt="Главный экран информационного сайта для туристов">
+          <div>
+            <h3 class="title">Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="btn" href=""><span class="visually-hidden">Цена: </span>9 900 Руб.</a>
+          </div>
+        </article>
+        <article class="productcard">
+          <img src="img/productcards/img-pink.jpg" width="360" height="576" alt="Главный экран продуктового лендинга приложения для iOS и Android">
+          <div>
+            <h3 class="title">Pink App</h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="btn" href=""><span class="visually-hidden">Цена: </span>9 900 Руб.</a>
+          </div>
+        </article>
+        <article class="productcard">
+          <img src="img/productcards/img-barbershop.jpg" width="360" height="576" alt="Главный экран сайта салона красоты для мужчин">
+          <div>
+            <h3 class="title">Barbershop</h3>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
+            <a class="btn" href=""><span class="visually-hidden">Цена: </span>9 900 Руб.</a>
+          </div>
+        </article>
+        <article class="productcard">
+          <img src="img/productcards/img-mishka.jpg" width="360" height="576" alt="Главный экран интернет-магазина вязаных игрушек">
+          <div>
+            <h3 class="title">Mishka</h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a class="btn" href=""><span class="visually-hidden">Цена: </span>9 900 Руб.</a>
+          </div>
+        </article>
+        <article class="productcard">
+          <img src="img/productcards/img-aplus.jpg" width="360" height="576" alt="Главный экран лендинга курсов повышения квалификации">
+          <div>
+            <h3 class="title">A Plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a class="btn" href=""><span class="visually-hidden">Цена: </span>9 900 Руб.</a>
+          </div>
+        </article>
+        <article class="productcard">
+          <img src="img/productcards/img-kvast.jpg" width="360" height="576" alt="Главный экран промо-сайта производителя крафтового кваса">
+          <div>
+            <h3 class="title">Кваст</h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a class="btn" href=""><span class="visually-hidden">Цена: </span>9 900 Руб.</a>
+          </div>
+        </article>
+      </section>
+
+      <div class="pagenation">
+        <a class="prev" href="">Предыдущая</a>
+        <ol class="li" start="1">
+          <li class="current"><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+        </ol>
+        <a class="next" href="">Следующая</a>
+      </div>
+
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="map">
+      <p class="visually-hidden">Найдите нас по карте</p>
+    </div>
+    <div class="contacts wrapper">
+      <strong class="title">NЁrds design studio</strong>
+      <address>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>Тел: <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+      </address>
+    </div>
+    <div class="social">
+      <p class="visually-hidden">Мы в социальных сетях</p>
+      <ul class="social-list">
+        <li><a href="">Вконтакте</a></li>
+        <li><a href="">Фейсбук</a></li>
+        <li><a href="">Инстаграмм</a></li>
+      </ul>
+    </div>
+    <div class="promo">
+      <strong class="title">Давайте дружить, это выгодно!</strong>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+
+  <section class="modal message">
+    <h2 class="title">Напишите нам</h2>
+    <form class="message-form" action="echo.htmlacademy.ru" method="post">
+      <label>
+        <b>Ваше имя:</b>
+        <input type="text" placeholder="Имя Фамилия"> 
+      </label>
+      <label>
+        <b>Ваш e-mail:</b> 
+        <input type="text" placeholder="email@example.com">
+      </label>
+      <label>
+        <b></b>
+        <textarea placeholder="В свободной форме"></textarea>
+      </label>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+    <button class="close">Закрыть</button>
+  </section>
+
+</body>
+</html>
